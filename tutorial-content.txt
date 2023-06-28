@@ -1,0 +1,128 @@
+Questions,
+    1. How do you write comments in a c program? What is the purpose of comments in a program?
+
+    2. Which is the function that is essential in a C program?
+
+    3. What is the purpose of ‘scanf’ ?
+
+    4. Is ‘standard c’ a case sensitive language?
+
+    5. Determine which of the following are valid identifiers. If invalid, explain why.
+        (a)  record1  (e)  $tax    (h)  name-and-address
+        (b)  1record  (f)  name    (i)  name_and_address
+        (c)  file-3   (g)  name and address    (j)  123 - 45  - 6789
+        (d)  return
+
+    6. State whether each of the following is true or false. If false, explain why.
+        a) Function printf always begins printing at the beginning of a new line.
+        b) Comments cause the computer to print the text enclosed between /* and */ on the screen
+        when the program is executed.
+        c) The escape sequence \n when used in a printf format control string causes the cursor to
+        position to the beginning of the next line on the screen.
+        d) All variables must be defined before they’re used.
+        e) All variables must be given a type when they’re defined.
+        f) C considers the variables, number and NuMbEr to be identical.
+        g) A program that prints three lines of output must contain three  printf statements.
+
+    7. What does the following code print?
+        printf( "*\n**\n***\n****\n*****\n" );
+
+    8. Identify and correct the errors in each of the following statements. (Note: There may be more than
+    one error per statement.)
+        a) scanf( "d", value );
+        b) printf( "The product of %d and %d is %d"\n, x, y );
+        c) Scanf( "%d", anInteger );
+        d) printf( "Remainder of %d divided by %d is\n", x, y, x % y );
+        e) print( "The sum is %d\n," x + y );
+        f) Printf( "The value you entered is: %d\n, &value );
+
+    9. What, if anything, prints when each of the following statements is performed? If nothing prints, then
+    answer “Nothing.” Assume  x = 2 and  y = 3 .
+        a) printf( "%d", x );
+        b) printf( "%d", x + x );
+        c) printf( "x=" );
+        d) printf( "x=%d", x );
+        e) printf( "%d = %d", x + y, y + x );
+        f) z = x + y;
+        g) scanf( "%d%d", &x, &y );
+        h) /* printf( "x + y = %d", x + y ); */
+        i) printf( "\n" );
+
+    10. State which of the following are true and which are false. If false, explain your answer.
+        a) C operators are evaluated from left to right.
+        b) The following are all valid variable names: _under_bar_ ,  m928134 ,  t5 ,  j7 ,  her_sales ,
+        his_account_total ,  a ,  b ,  c ,  z ,  z2 .
+        c) The statement printf("a = 5;"); is a typical example of an assignment statement.
+        d) A valid arithmetic expression containing no parentheses is evaluated from left to right.
+        e) The following are all invalid variable names:  3g ,  87 ,  67h2 ,  h22 ,  2h
+
+Answers,
+    1.
+        Comments are used to explain the code for a third person who is reading the code. It should
+        carry enough context to understand the code without having to read the code. Comments are
+        ignored by the compiler. In object C comments are written using /* */ or //.
+
+    2.
+        main() function is essential in a C program, it is executed first when the program is run.
+        It is simply the entry point of the program.
+
+    3.
+        scanf() is used to read input from STDIN (standard input), or in simple words it is used to
+        read input from the user. It is used with the format specifiers to cast the data into a desired
+        data type.
+
+    4. C is a case sensitive language.
+
+    5.
+        (a) Valid
+        (b) Invalid, variable names cannot start with a number.
+        (c) Invalid, variable names cannot contain special characters except underscore.
+        (d) Valid
+        (e) Valid
+        (f) Valid
+        (g) Invalid, variable names cannot contain spaces.
+        (h) Invalid, variable names cannot contain special characters except underscore.
+        (i) Valid
+        (j) Invalid, variable names cannot contain spaces.
+
+    6.
+        a) False, printf() prints the output on the same line unless a newline character is used.
+        b) False, comments are ignored by the compiler.
+        c) True
+        d) True
+        e) True
+        f) False, C is a case sensitive language.
+        g) False, a single printf() statement can print multiple lines.
+
+    7.
+        *
+        **
+        ***
+        ****
+        *****
+
+    8.
+        a) scanf("%d", &value);
+        b) printf("The product of %d and %d is %d\n", x, y, x * y);
+        c) scanf("%d", &anInteger);
+        d) printf("Remainder of %d divided by %d is %d\n", x, y, x % y);
+        e) printf("The sum is %d\n", x + y);
+        f) printf("The value you entered is: %d\n", value);
+
+    9.
+        a) 2
+        b) 4
+        c) x=
+        d) x=2
+        e) 5 = 5
+        f) Nothing
+        g) Nothing
+        h) Nothing
+        i) A new line
+
+    10.
+        a) True
+        b) True
+        c) False, it is a function call.
+        d) False, it is evaluated according to the precedence of the operators.
+        e) False, variable names cannot start with a number.
